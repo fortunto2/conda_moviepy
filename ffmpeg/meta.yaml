@@ -20,3 +20,4 @@ test:
 about:
     home: https://www.ffmpeg.org/
     license: LGPL
+    summary: 'OpenCV with ffmpeg support'
