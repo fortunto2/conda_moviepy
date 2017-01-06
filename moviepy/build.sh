@@ -1,6 +1,6 @@
 #!/bin/bash
-
-$PYTHON setup.py install
+pip install tqdm
+python setup.py install
 
 # Add more build steps here, if they are necessary.
 
