@@ -1,0 +1,1 @@
+cp ff* $PREFIX/bin

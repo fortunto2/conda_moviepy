@@ -1,0 +1,22 @@
+# This file created by conda-build 2.0.0
+# meta.yaml template originally from:
+# /home/travis/build/menpo/conda-ffmpeg/conda, last modified Wed Sep  7 12:29:32 2016
+# ------------------------------------------------
+
+package:
+    name: ffmpeg
+    version: 3.2.2
+source:
+    fn: ffmpeg-release-64bit-static.tar.xz
+    md5: cafc7172195824fea5246b326f6b85be
+    url: http://johnvansickle.com/ffmpeg/releases/ffmpeg-release-64bit-static.tar.xz
+build: {}
+requirements:
+    build: ''
+test:
+    commands:
+        - ffmpeg -version
+        - ffprobe -version
+about:
+    home: https://www.ffmpeg.org/
+    license: LGPL
