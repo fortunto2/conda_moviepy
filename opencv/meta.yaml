@@ -1,0 +1,32 @@
+package:
+  name: opencv
+  version: 2.4.13
+
+source:
+  fn: opencv-2.4.13.zip
+  url: http://sourceforge.net/projects/opencvlibrary/files/opencv-unix/2.4.13/opencv-2.4.13.zip/download
+  sha1: 0c6e4d890f6252ae8feae0c92f397f63aaa41a08
+
+build:
+  number: 1
+
+requirements:
+  build:
+   - python 2.7*
+   - cmake 3.6.3
+   - numpy
+   - eigen 3.2.2
+
+  run:
+   - python 2.7*
+   - numpy
+   - libgcc
+
+test:
+  imports:
+    - cv2
+    - cv2.cv
+
+about:
+  home: http://opencv.org/
+  license: BSD
