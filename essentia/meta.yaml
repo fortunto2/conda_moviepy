@@ -1,0 +1,28 @@
+package:
+  name: essentia
+  version: 2.1 beta3
+
+source:
+  fn: v2.1_beta3.zip
+  url: https://github.com/MTG/essentia/archive/v2.1_beta3.zip
+  # sha1: 0c6e4d890f6252ae8feae0c92f397f63aaa41a08
+
+build:
+  number: 0
+
+requirements:
+  build:
+   - python 2.7*
+   - cmake
+   - numpy
+   - numpy-dev
+
+
+  run:
+   - python 2.7*
+   - numpy
+
+
+about:
+  home: http://opencv.org/
+  license: BSD
